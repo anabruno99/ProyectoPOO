@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <!-- CSS sheet -->
+  <link rel="stylesheet" href="../css/style-categorias.css">
+  <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16">
+  <title>Funciones</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <nav>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fundamentos.html">Fundamentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="clases.html">Clases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="herencia.html">Herencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="poliformismo.html">Polimorfismo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plantillas.html">Plantillas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aplicacion.html">Aplicaciones</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-titulo centered">
+        <p>Funciones</p>
+      </div>
+
+    </nav>
+  </div>
+
+  <section>
+    <div class="contenido">
+      <div class="titulo">
+        <h2>Funcion </h2>
+      </div>
+      <div class="todo-col">
+        <div class="filas">
+          <div class="definicion">
+            <h3>Definicion:</h3>
+            <p>Las funciones son un conjunto de instrucciones que realizan una tarea específica.
+              En general toman ciertos valores de entrada, llamados parámetros y proporcionan un
+              valor de salida o valor de retorno; aunque en C++, tanto unos como el
+              otro son opcionales, y pueden no existir.</p>
+          </div>
+          <div class="sintaxis">
+            <h3>Sintaxis: </h3>
+            <img src="../img/sintaxis/sin-funcion.jpg" alt="sintaxis" width="700" height="30">
+          </div>
+        </div>
+        <div class="ejemplo">
+          <h3>Ejemplo: </h3>
+          <img src="../img/ejemplos/ejm-funcion.jpg" alt="ejemplo" width="800" height="250">
+          <a href="#" id="ejemplos-archivos">Archivos del semestre</a>
+        </div>
+      </div>
+
+      <div class="titulo">
+        <h2>Funciones amigas </h2>
+      </div>
+      <div class="todo-col">
+        <div class="filas">
+          <div class="definicion">
+            <h3>Definicion:</h3>
+            <p>Acceso a los miembros privados de una clase
+              sin que esa función sea realmente un miembro
+              de esa clase. C++ soporta las funciones amigas.
+              Una función amiga no es un miembro de una clase,
+              pero tiene acceso a sus elementos privados.
+              Sobrecarga de operadores y la creación de ciertos
+              tipos de funciones de E/S. </p>
+
+          </div>
+          <div class="sintaxis">
+            <h3>Sintaxis: </h3>
+            <img src="../img/sintaxis/sin-funcion-amigas.jpg" alt="sintaxis" width="700" height="85">
+          </div>
+        </div>
+        <div class="ejemplo">
+          <h3>Ejemplo: </h3>
+          <img src="../img/ejemplos/ejm-funcion-amigas.jpg" alt="ejemplo" width="750" height="250">
+          <a href="#" id="ejemplos-archivos">Archivos del semestre</a>
+        </div>
+      </div>
+
+      <div class="titulo">
+        <h2>Funciones de sobrecarga </h2>
+      </div>
+      <div class="todo-col">
+        <div class="filas">
+          <div class="definicion">
+            <h3>Definicion:</h3>
+            <p>Anteriormente hemos visto operadores que tienen varios usos, como por ejemplo *, &, << o>>. Esto es lo que se conoce en C++ como sobrecarga de operadores. Con las funciones existe un mecanismo análogo, de hecho, en C++, los operadores
+                no son sino un tipo especial de funciones, aunque eso sí, algo peculiares.
+
+                Así que en C++ podemos definir varias funciones con el mismo nombre, con la única condición de que el número y/o el tipo de los argumentos sean distintos. El compilador decide cual de las versiones de la función usará después de
+                analizar el número y el tipo de los parámetros. Si ninguna de las funciones se adapta a los parámetros indicados, se aplicarán las reglas implícitas de conversión de tipos.
+
+                Las ventajas son más evidentes cuando debemos hacer las mismas operaciones con objetos de diferentes tipos o con distinto número de objetos. Hasta ahora habíamos usado macros para esto, pero no siempre es posible usarlas, y además las
+                macros tienen la desventaja de que se expanden siempre, y son difíciles de diseñar para funciones complejas. Sin embargo las funciones serán ejecutadas mediante llamadas, y por lo tanto sólo habrá una copia de cada una.</p>
+          </div>
+          <div class="sintaxis">
+            <h3>Sintaxis: </h3>
+            <img src="../img/sintaxis/sin-funcion-sobrecarga.jpg" alt="sintaxis" width="700" height="100">
+          </div>
+        </div>
+        <div class="ejemplo">
+          <h3>Ejemplo: </h3>
+          <img src="../img/ejemplos/ejm-funcion-sobrecarga.jpg" alt="ejemplo" width="800" height="450">
+          <a href="#" id="ejemplos-archivos">Archivos del semestre</a>
+        </div>
+      </div>
+
+      <div class="titulo">
+        <h2>Funciones virtuales </h2>
+      </div>
+      <div class="todo-col">
+        <div class="filas">
+          <div class="definicion">
+            <h3>Definicion:</h3>
+            <p>La virtualización de funciones y clases nos permite implementar una de las propiedades más potentes de POO: el polimorfismo.</p>
+          </div>
+          <div class="sintaxis">
+            <h3>Sintaxis: </h3>
+            <img src="../img/sintaxis/sin-funcion-virtual.jpg" alt="sintaxis" width="800" height="60">
+          </div>
+        </div>
+        <div class="ejemplo">
+          <h3>Ejemplo: </h3>
+          <img src="../img/ejemplos/ejm-funcion-virtual.jpg" alt="ejemplo" width="610" height="220">
+          <a href="#" id="ejemplos-archivos">Archivos del semestre</a>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Instituto Politecnico Nacional</p>
+  </footer>
+
+</body>
+
+</html>
