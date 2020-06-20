@@ -58,12 +58,12 @@ a:hover, a:active {background-color: #0077b6;}
 
 .filas { border-right: 1px solid #00b4d8;}
 
-.ejemplo img , .sintaxis img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.sintaxis img, .ejemplo img{
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;    
 }
-
 /* Cuerpo */
 .ejemplo a {
   text-decoration: none;
@@ -72,10 +72,6 @@ a:hover, a:active {background-color: #0077b6;}
   text-align:center;
 
 }
-
-/**/
-
-
 
 /* Footer */
 footer {

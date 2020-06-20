@@ -31,43 +31,60 @@ body{font-family: "Montserrat";}
 
 /* Lista de contenido */
 
-ul.lista-con{width: 100%;}
+.select{
+    width: 100%;
+    height: 380px;
+}
 
-.con-item {
-  margin-left: 15px;
-  height: 200px;
-  width: 200px;
-  background-color: #00b4d8;
+ul.lista-con{
+    padding: 0px;
+    margin: 20px 0px;
+    width: 95%;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: center;
+}
+
+[class*="con-item"] {
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    border-radius: 5%;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: .95rem;
+    background-color: #00b4d8;
+    
 }
 
 .con-link{
-  position:fixed;
-  display: inline-flex;
-  margin-left: -5px;
+  position: fixed;
+  display: flex;
   width: inherit;
   height: inherit;
   align-items: center;
 }
 
 .elemento{
-  position: fixed;
-  width: inherit;
+    margin-left: -20px;
+    text-align: center;
+    justify-content: center;
+    width: inherit;
+}
+
+@media only screen and (min-width: 1480px) {
+    .con-item {
+        margin: 7px;
+        height: 200px;
+        font-size: 1.2rem;
+    }
+    .elemento{
+        margin-left: 0px;
+    }
 }
 
 
 
-.lista-con {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-
-.con-item {
-  padding-left: 10px;
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
 
 a:link, a:visited {
   color: white;
